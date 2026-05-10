@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://congenial-space-chainsaw-wv77v46vj6r2gqj-5000.app.github.dev/'
+  baseURL:'https://congenial-space-chainsaw-wv77v46vj6r2gqj-5000.app.github.dev/api'
 })
 
 export const getEmployees    = ()         => API.get('/employees');
