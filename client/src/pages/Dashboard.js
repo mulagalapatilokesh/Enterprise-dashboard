@@ -73,7 +73,7 @@ function Dashboard() {
                   height: `${(dept.count / maxCount) * 100}%`,
                   background: deptColors[i % deptColors.length]
                 }} />
-                <div style={styles.barLabel}>{dept._id?.slice(0,5)}</div>
+                <div style={styles.barLabel}>{dept._id}</div>
               </div>
             ))}
           </div>
@@ -140,7 +140,7 @@ const styles = {
   barWrap: { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', flex: 1 },
   bar: { borderRadius: '4px 4px 0 0', width: '100%', transition: 'height 0.3s ease' },
   barVal: { fontSize: '11px', fontWeight: '600', color: '#475569' },
-  barLabel: { fontSize: '10px', color: '#94a3b8' },
+  barLabel: { fontSize: '9px', color: '#94a3b8', textAlign: 'center', wordBreak: 'break-word', maxWidth: '100%' },
   statusList: { display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '8px' },
   statusRow: { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' },
   statusLeft: { display: 'flex', alignItems: 'center', gap: '8px', minWidth: '70px' },
